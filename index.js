@@ -20,7 +20,7 @@
   function currentLine(katzDeliline) {
     let i = 0;
     while (i < katzDeliline.length) {
-     line.push(`$[i+1]+`. `  + katzDeliline[i])
+     line.push(` ${i+1} ${katzDeliline[i])
       i++;
     }
     if (katzDeli.length === 0) {
