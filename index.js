@@ -1,26 +1,26 @@
  
-  function takeANumber(katzDeli, name) {
-    katzDeli.push(`${name}`);
-    return(`Welcome, ${name}. You are number ${katzDeli.length} in line.`);
+  function takeANumber(katzDeliline, name) {
+    katzDeliline.push(`${name}`);
+    return(`Welcome, ${name}. You are number ${katzDeliline.length} in line.`);
   }
    		  
-  function nowServing(katzDeli) {	
+  function nowServing(katzDeliline) {	
     let i = 0;
-    while (i < katzDeli.length) {
+    while (i < katzDeliline.length) {
       i++;
     }
-    if (katzDeli.length === 0) {
+    if (katzDeliline.length === 0) {
       return "There is nobody waiting to be served!";
     }
     else
-    return (`Currently serving ${katzDeli.shift()}.`);
+    return (`Currently serving ${katzDeliline.shift()}.`);
    }		  
  
  var line = [];
-  function currentLine(katzDeli) {
+  function currentLine(katzDeliline) {
     let i = 0;
-    while (i < katzDeli.length) {
-     line.push(` `+[i+1]+`. `  + katzDeli[i])
+    while (i < katzDeliline.length) {
+     line.push(` `+[i+1]+`. `  + katzDeliline[i])
       i++;
     }
     if (katzDeli.length === 0) {
